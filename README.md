@@ -2,11 +2,6 @@
 
 ##  Awesome Multi-Container Weather Almanac service (AMCWA)
 
-## Requirements 
- - docker
- - git
- - make tools
-
 ### Installation
     # docker compose up --build server -d
     # docker compose up --build test
