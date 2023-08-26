@@ -1,0 +1,15 @@
+services:
+  server:
+    build:
+      context: .
+      target: app
+    container_name: 10x-weather-app
+    hostname: 10x-weather-app
+    ports:
+      - 8234:8234
+  test:
+    build:
+      context: .
+      target: test
+    container_name: 10x-weather-test
+    entrypoint: python -m pytest -v test_integration.py
